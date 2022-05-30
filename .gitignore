@@ -1,0 +1,8 @@
+.vscode/*
+.vscode/
+.vscode
+.history/
+*.o
+server
+*.class
+*.rep

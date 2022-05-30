@@ -1,0 +1,32 @@
+Obligatoire :
+> Corriger le mouvement des fantômes (Passer à travers les murs, vérifier les bugs, etc.)
+> Vérifier que la partie se termine correctement (Le nombre de points de chaque joueur, le gagnant, etc.)
+> Faire en sorte que le client et serveur puissent communiquer avec des clients et serveurs différents (de d'autre groupes)
+> Corriger les bugs (essayer de casser le client/serveur)
+> Faire en sorte que le Makefile ne recompile pas de 0 à chaque fois
+> Avoir différents labyrinthe OU généré des labyrinthes de façon aléatoire
+> Ne pas rendre possible d'avoir 2 fois le même pseudo (forcer le joueur a le changer si c'est le cas). Plusieurs complexité :
+    1. Pseudo aléatoire, probabilité faible de tomber sur le même pseudo (actuellement comme ça)
+    2. Garder une liste des joueurs et vérifier à la création d'un pseudo (Détournement du protocole avec une requête telle que "USER?", "USER!", "PLAYR")
+    3. Permettre aux joueurs de changer leurs pseudos
+> Faire des messages plus clairs/simples pour les joueurs 
+> Tour par tour pour les joueurs (ne pas sauter le tour si le client a tenté une action impossible)
+
+Bugs :
+> Action bizarre des fantomes, cause : soit quand un fantome est attrapé, soit quand il y a 2 parties en meme temps
+> Affiche des deplacements du fantome sur le client envoyé de façon bizarre du aux threads
+
+
+Vérification :
+> Mouvements et bugs des fantômes
+> La partie se termine correctement (le gagnant, le nombre de points de chaque joueur, etc.)
+> Client et serveur puissent communiquer avec des clients et serveurs différents (pas les notre)
+> Message/Commentaire en français | fonctions/variables en anglais
+
+Facultatif :
+> Supprimer les fonctions/variables/imports inutiles
+> Ajouter des commentaires et des print (en français)
+> Dire aux joueurs quels déplacements il peut effectuer (haut, bas, gauche, droite)
+> Simplifier le code (le rendre plus lisible, rassembler les fonctions effectuant les mêmes choses, éviter de manipuler plein de fois les données)
+> Permettre aux joueurs de voir une approximation du plateau qu'ils découvrent (la position des fantômes/joueurs et les murs qu'ils ont touchés)
+> Version graphique (c'est chaud (ensuite on sait jamais (mais j'y crois pas)))
